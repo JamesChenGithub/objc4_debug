@@ -5987,6 +5987,7 @@ log_and_fill_cache(Class cls, IMP imp, SEL sel, id receiver, Class implementer)
 **********************************************************************/
 IMP lookUpImpOrForward(id inst, SEL sel, Class cls, int behavior)
 {
+    printf("| %30s | %30s | %30s |\n", __FUNCTION__, class_getName(cls), sel_getName(sel));
     const IMP forward_imp = (IMP)_objc_msgForward_impcache;
     IMP imp = nil;
     Class curClass;

@@ -1697,13 +1697,14 @@ _objc_rootRelease(id obj)
 static ALWAYS_INLINE id
 callAlloc(Class cls, bool checkNil, bool allocWithZone=false)
 {
+    printf("| %30s | %30s |\n", __FUNCTION__, class_getName(cls));
 #if __OBJC2__
     if (slowpath(checkNil && !cls)) return nil;
     if (fastpath(!cls->ISA()->hasCustomAWZ())) {
         return _objc_rootAllocWithZone(cls, nil);
     }
 #endif
-
+    
     // No shortcuts available.
     if (allocWithZone) {
         return ((id(*)(id, SEL, struct _NSZone *))objc_msgSend)(cls, @selector(allocWithZone:), nil);
