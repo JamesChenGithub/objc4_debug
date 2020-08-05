@@ -619,12 +619,11 @@
 		08FB7793FE84155DC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = NO;
 				LastUpgradeCheck = 0440;
 				TargetAttributes = {
 					7AF76778220C299900D3CB66 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = U5LAHK8PW6;
+						DevelopmentTeam = 43YJ58H38Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1025,7 +1024,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = U5LAHK8PW6;
+				DEVELOPMENT_TEAM = 43YJ58H38Q;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
